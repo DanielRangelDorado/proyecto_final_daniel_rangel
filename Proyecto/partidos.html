@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+<!--link a tipografía conectada en Google Fonts: Noto Serif Armenian-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@500&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+	<title>Rayo Vallecano de Madrid S.A.D</title>
+</head>
+
+<body>
+
+<div class="cabecera">
+	<table style="width:100%;" >
+		<tr>
+			<td width="20%">
+				<a href="index.html">
+					<img src="..\img/escudo-rayo-vallecano-pequeno.png" class="logo">
+				</a>
+			</td>
+			<td width="45%" class="title" align="center" >
+				Rayo Vallecano de Madrid S.A.D.
+			</td>
+			<td align="right">
+				<div class="menuDesktop">
+					<span class="itemMenu"><a href="./club.html">El Club</a></span>
+					<span class="itemMenu"><a href="./equipo.html">El Equipo</a></span>
+					<span class="itemMenu"><a href="./partidos.html">Partidos</a></span>
+				</div>
+				<div class="menuMobile" >
+					<span class="material-icons hamburguer" style="cursor:pointer" onClick="toggleMenu()">menu</span>
+				</div>
+
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="menuDesplegableMobile" id="menuMob">
+	<span class="itemMenu itemMenuMob"><a href="./club.html">El Club</a></span>
+	<span class="itemMenu itemMenuMob"><a href="./equipo.html">El Equipo</a></span>
+	<span class="itemMenu itemMenuMob"><a href="./partidos.html">Partidos</a></span>
+</div>
+
+<div class="cuerpo">
+	<div class="tituloPagina">Partidos</div>
+</div>
+
+<div class="pie">
+	<div>
+		<span class="material-icons">person_outline</span> &nbsp;&nbsp;Página creada por Daniel Rangel Dorado
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td align="right" style="padding-right:20px"><span class="material-icons">mail</span></td>
+				<td align="left"><a href="mailto:danielrangeldorado@correo.com">danielrangeldorado@correo.com</a></td>
+			</tr>
+			<tr>
+				<td align="right"  style="padding-right:20px"><span class="material-icons">local_phone</span></td>
+				<td align="left"><a href="tel:+34 699 308 390">+34 699 308 390</a></td>
+			</tr>
+
+		</table>
+		 <br>
+		 
+	</div>
+</div>
+</body>
+<script src="./js/index.js"></script>
+</html>

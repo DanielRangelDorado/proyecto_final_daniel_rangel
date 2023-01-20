@@ -1,0 +1,195 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Noto Serif armenio', sans-serif;
+	
+	
+}
+.global{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width:100%;
+}
+/*Elementos relativos al encabezado de página*/
+header{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #ff0000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.escudo{
+	margin-left:20px;
+	width:20%;	
+}
+
+/*Navegador dentro del encabezado*/
+nav{
+	width: 380px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	margin-right:20px;
+}
+nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+li a{
+	text-size-adjust: 1em;
+	color: black;
+	text-decoration: none;
+}
+
+/* sección bienvenida*/
+.bienvenida{
+	width: 100%;
+
+	/*background: url("../img/bienvenida.jpeg") no-repeat center;*/
+	background-size: cover;
+	opacity: 0,5;
+
+}
+.bienvenida p{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Noto Serif Armenian', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yellowtail';
+	font-style:italic;
+    color: white;
+}
+
+/*Sección camisetas*/
+.camisetas{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff0000;
+	flex-wrap: wrap;
+}
+
+/*Div camiseta local jugador*/
+.local{
+	width:100%;
+	margin: 20px;
+	padding: 25px;
+	background-color: white;
+	display: block;
+}
+.local p{
+	width: calc(100% - 80px);
+	margin: 40px;
+	text-align: center;
+}
+
+/*Div camiseta local portero*/
+.portero{
+	width:100%;
+	margin: 20px;
+	padding: 25px;
+	background-color: white;
+	display: block;
+}
+.portero p{
+	width: calc(100% - 80px);
+	margin: 40px;
+	text-align: center;
+}
+
+/*Div camiseta visitante jugador*/
+.visitante{
+	width:100%;
+	margin: 20px;
+	padding: 25px;
+	background-color: white;
+	display: block;
+}
+.visitante p{
+	width: calc(100% - 80px);
+	margin: 40px;
+	text-align: center;
+}
+
+.comprar{
+	height: 50px;
+	width: 200px;
+	border: 2px solid #000000;
+	border-radius: 10%;
+	background-color: #ff0000;
+	margin-left: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.comprar a{
+	width: 100%;
+	text-align:center;
+	text-decoration: none;
+	color:white;
+}
+
+/*Sección sponsors*/
+.sponsor{
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: white;
+}
+.sponsor img{
+	margin: 20px;
+}
+/*Elementos relativos al footer de página*/
+footer{
+
+	width: 100%;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	grid-column-start: center;
+	position: relative;
+	bottom: 0px;
+	background-color: black;
+	z-index: 1;
+}
+footer p{
+	margin: 20px;
+	color: white;
+}
+
+
+/*MEDIA QUERIES: ADAPTACIÓN A DISPOSITIVOS*/
+h1{
+	color: white;
+}
+@media screen and (min-width: 981px){
+	h1{
+		font-size:25px;
+	}
+	
+}
+@media screen and (max-width: 980px){
+	h1{
+		font-size:25px;
+	}
+	
+}
+@media screen and (max-width: 500px){
+	h1{
+		font-size:25px;
+	}
+	
+}
