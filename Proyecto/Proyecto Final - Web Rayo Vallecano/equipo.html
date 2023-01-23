@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+<!--link a tipografía conectada en Google Fonts: Noto Serif Armenian-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@500&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+	<title>Rayo Vallecano de Madrid S.A.D</title>
+</head>
+
+<body>
+<!--Cabecera web formada por el logo, titulo y menú mobile/desktop en función del tamaño-->
+	<div class="cabecera">
+		<table style="width:100%;" >
+			<tr>
+				<td width="20%">
+					<a href="index.html">
+						<img src="./img/escudo-rayo-vallecano-pequeno.png" class="logo">
+					</a>
+				</td>
+				<td width="45%" class="title" align="center" >
+					Rayo Vallecano de Madrid S.A.D.
+				</td>
+				<td align="right">
+					<!--Menú desktop sincronizado con JS en función del tamaño de la pantalla-->
+					<div class="menuDesktop">
+						<span class="itemMenu"><a href="./club.html">Club</a></span>
+						<span class="itemMenu"><a href="./equipo.html">Equipo</a></span>
+						<span class="itemMenu"><a href="./partidos.html">Partidos</a></span>
+					</div>
+					<!--Menú mobile sincronizado con JS en función del tamaño de la pantalla-->
+					<div class="menuMobile" >
+						<span class="material-icons hamburguer" style="cursor:pointer" onClick="toggleMenu()">menu</span>
+					</div>
+	
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!--Menú mobile-->
+	<div class="menuDesplegableMobile" id="menuMob">
+		<span class="itemMenu itemMenuMob"><a href="./club.html">Club</a></span>
+		<span class="itemMenu itemMenuMob"><a href="./equipo.html">Equipo</a></span>
+		<span class="itemMenu itemMenuMob"><a href="./partidos.html">Partidos</a></span>
+	</div>
+
+<!--Cuerpo de la página formado por la plantilla del Rayo Vallecano por posición y ordenador por dorsal-->
+<div class="cuerpoEquipo">
+	<div class="tituloPagina">Equipo</div>
+</div>
+
+	<table class="tablaJugadores">
+		<tr>
+			<th>Porteros</th>
+		</tr>
+			<tr class="porteros">
+				<td colspan="3"> 
+					1. Stole Dimitrievski<br><br>
+					13. Diego López<br><br>
+					30. Miguel Ángel Morro</td>
+			</tr>
+
+		<tr>
+			<th><br>Defensas<br></th>
+		</tr>
+			<tr class="defensas">
+				<td colspan="9"> 
+				2. Mario Hernández<br><br>
+				3. Fran García<br><br>
+				4. Mario Suárez<br><br>
+				5. Alejandro Catena<br><br>
+				15. Pep Chevarría<br><br>
+				16. Abdul Mumin<br><br>
+				19. Florian Lejeune<br><br>
+				20. Ivan Balliu<br><br>
+				24. Esteban Saveljich</td>
+			</tr>
+
+		<tr>
+		<th><br>Centrocampistas<br></th>
+		</tr>
+			<tr class="centrocampistas">
+				<td colspan="7"> 
+				6. Santiago Comeseña<br><br>
+				8. Óscar Trejo<br><br>
+				11. Randy Nteka<br><br>
+				17. Unai López<br><br>
+				21. Pathé Ciss<br><br>
+				22. José Pozo<br><br>
+				23. Óscar Valentín </td>
+			</tr>
+
+		<tr>
+			<th><br>Delanteros<br></th>
+		</tr>
+			<tr class="delanteros">
+				<td colspan="8"> 
+				7. Isi Palazón<br><br>
+				9. Radamel Falcao<br><br>
+				10. Bebé<br><br>
+				12. Andrés Martín<br><br>
+				14. Salvi Sánchez<br><br>
+				18. Álvaro García<br><br>
+				25. Raúl de Tomás
+				34 Sergio Camello </td>
+			</tr>
+	</table>
+
+
+<!--Pie de la página formada por la descripción del creador, correo funcional y teléfono funcional-->
+<div class="pie">
+	<div>
+		<span class="material-icons">person_outline</span> &nbsp;&nbsp;Página creada por Daniel Rangel Dorado
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td align="right" style="padding-right:20px"><span class="material-icons">mail</span></td>
+				<td align="left"><a href="mailto:danielrangeldorado@correo.com">danielrangeldorado@correo.com</a></td>
+			</tr>
+			<tr>
+				<td align="right"  style="padding-right:20px"><span class="material-icons">local_phone</span></td>
+				<td align="left"><a href="tel:+34 699 308 390">+34 699 308 390</a></td>
+			</tr>
+
+		</table><br>		 
+	</div>
+</div>
+</body>
+
+<!--Llamada al script para el dinanismo web-->
+<script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+<!--link a tipografía conectada en Google Fonts: Noto Serif Armenian-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@500&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+	<title>Rayo Vallecano de Madrid S.A.D</title>
+</head>
+
+<body>
+<!--Cabecera web formada por el logo, titulo y menú mobile/desktop en función del tamaño-->
+<div class="cabecera">
+	<table style="width:100%;" >
+		<tr>
+			<td width="20%">
+				<a href="index.html">
+					<img src="./img/escudo-rayo-vallecano-pequeno.png" class="logo">
+				</a>
+			</td>
+			
+			<td width="45%" class="title" align="center" >
+				Rayo Vallecano de Madrid S.A.D.
+			</td>
+
+			<td align="right">
+				<!--Menú desktop sincronizado con JS en función del tamaño de la pantalla-->
+				<div class="menuDesktop">
+					<span class="itemMenu"><a href="./club.html">Club</a></span>
+					<span class="itemMenu"><a href="./equipo.html">Equipo</a></span>
+					<span class="itemMenu"><a href="./partidos.html">Partidos</a></span>
+				</div>
+				<!--Menú mobile sincronizado con JS en función del tamaño de la pantalla-->
+				<div class="menuMobile" >
+					<span class="material-icons hamburguer" style="cursor:pointer" onClick="toggleMenu()">menu</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!--Menú mobile-->
+<div class="menuDesplegableMobile" id="menuMob">
+	<span class="itemMenu itemMenuMob"><a href="./club.html">Club</a></span>
+	<span class="itemMenu itemMenuMob"><a href="./equipo.html">Equipo</a></span>
+	<span class="itemMenu itemMenuMob"><a href="./partidos.html">Partidos</a></span>
+</div>
+
+<!--Cuerpo de la página formado por las crónicas de cada partido-->
+<div class="cuerpoPartidos">
+	<div class="tituloPagina">Partidos</div>
+
+	<div class="tablaResultados">
+		<ul class="listaCronica">
+
+			<!--Crónica Real Sociedad-->
+			<li class="sociedad">
+				<a href="http://matagigantes.net/rayo-vallecano/cronica/un-rayo-inofensivo/">
+					<h2>Rayo Vallecano - Real Sociedad</h2>
+					<img src="./img/sociedad.jpeg" class="sociedadImagen">
+					<p>En el día de hoy se enfrentaban en Vallecas el Rayo Vallecano y la Real Sociedad, dos equipos que buscaban seguir soñando con sus “nuevos” objetivos. La Real con los puestos de Champions y el Rayo Vallecano en busca del sueño europeo.
+						Todo estaba preparado para recibir al conjunto vasco, y hoy a diferencia que contra el Betis, acompañaba hasta el tiempo. La Real llegaba con bajas importantes como en el medio campo las de Mikel Merino y Zubime...</p>
+					<button class="leerMas">Seguir leyendo</button>
+				</a>
+			</li>
+			<!--Crónica Real Betis-->
+			<li class="betis">
+				<a href="http://matagigantes.net/rayo-vallecano/cronica/partidazo-en-vallecas-sin-premio-final/">
+					<h2>Rayo Vallecano - Real Betis</h2>
+					<img src="./img/betis.jpeg" class="betisImagen">
+					<p>Hoy volvía el futbol a Vallecas tras el parón mundialista y volvía de la mejor manera, todos los tiques vendidos, la ilusión de los aficionados locales con el equipo y el sentimiento de venganza por volverse a ver contra el Betis, un rival con el que tenían una deuda pendiente.
+
+						En la Albufera se ha vivido un partidazo muy igualado y disputado entre el Betis y el Rayo. Un encuentro que deja al conjunto de la franja con un sabor agridulce, que no pudo sumar esos puntos tan importantes que defiende Iraola. Un gran gol de Luiz Henrique, un par de fallos defensivos y el infortunio del conjunto vall...</p>
+					<button class="leerMas">Seguir leyendo</button>
+				</a>
+			</li>
+			<!--Crónica Valencia CF-->
+			<li class="valencia">
+				<a href="http://matagigantes.net/rayo-vallecano/cronica/contador-a-cero/">
+					<h2>Rayo Vallecano - Valencia C.F</h2>
+					<img src="./img/valencia.jpeg" class="valenciaImagen">
+					<p>El Rayo Vallecano ha vencido y convencido en la tarde de hoy frente al Valencia CF. Un triunfo que, además de los tres puntos, pone fin a una mala racha de 266 días sin lograr vencer en liga en Vallecas (sí lo consiguió en Copa).
+
+						En la previa del partido de hoy, Andoni Iraola ya iba dando pistas del Rayo Vallecano que quería ver hoy, intenso, con balón, mandando en el partido, siendo dominador, y ha vuelto a demostrar que en el papel de Hannibal Smith, celebrando que los planes salgan bien, es el mejor. Para ello, dispuso un once prácticamente idéntico al que jugó la semana pasada en El Sadar, con la única permuta de Santi Comesaña por Pathé...</p>
+					<button class="leerMas">Seguir leyendo</button>
+				</a>
+			</li>
+		</ul>
+</div>
+
+<!--Pie de la página formada por la descripción del creador, correo funcional y teléfono funcional-->
+<div class="pie">
+	<div>
+		<span class="material-icons">person_outline</span> &nbsp;&nbsp;Página creada por Daniel Rangel Dorado
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td align="right" style="padding-right:20px"><span class="material-icons">mail</span></td>
+				<td align="left"><a href="mailto:danielrangeldorado@correo.com">danielrangeldorado@correo.com</a></td>
+			</tr>
+			<tr>
+				<td align="right"  style="padding-right:20px"><span class="material-icons">local_phone</span></td>
+				<td align="left"><a href="tel:+34 699 308 390">+34 699 308 390</a></td>
+			</tr>
+		</table><br>
+	</div>
+</div>
+</body>
+
+<!--Llamada al script para el dinanismo web-->
+<script src="./js/index.js"></script>
+</html>

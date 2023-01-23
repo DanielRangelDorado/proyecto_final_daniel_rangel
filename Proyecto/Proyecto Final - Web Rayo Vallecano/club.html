@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+<!--link a tipografía conectada en Google Fonts: Noto Serif Armenian-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@500&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+	<title>Rayo Vallecano de Madrid S.A.D</title>
+</head>
+
+<body>
+<!--Cabecera web formada por el logo, titulo y menú mobile/desktop en función del tamaño-->
+	<div class="cabecera">
+		<table style="width:100%;" >
+			<tr>
+				<td width="20%">
+					<a href="index.html">
+						<img src="./img/escudo-rayo-vallecano-pequeno.png" class="logo">
+					</a>
+				</td>
+				<td width="45%" class="title" align="center" >
+					Rayo Vallecano de Madrid S.A.D.
+				</td>
+				<td align="right">
+					<!--Menú desktop sincronizado con JS en función del tamaño de la pantalla-->
+					<div class="menuDesktop">
+						<span class="itemMenu"><a href="./club.html">Club</a></span>
+						<span class="itemMenu"><a href="./equipo.html">Equipo</a></span>
+						<span class="itemMenu"><a href="./partidos.html">Partidos</a></span>
+					</div>
+					<!--Menú mobile sincronizado con JS en función del tamaño de la pantalla-->
+					<div class="menuMobile" >
+						<span class="material-icons hamburguer" style="cursor:pointer" onClick="toggleMenu()">menu</span>
+					</div>	
+				</td>
+			</tr>
+		</table>
+	</div>
+<!--Menú mobile-->
+	<div class="menuDesplegableMobile" id="menuMob">
+		<span class="itemMenu itemMenuMob"><a href="./club.html">Club</a></span>
+		<span class="itemMenu itemMenuMob"><a href="./equipo.html">Equipo</a></span>
+		<span class="itemMenu itemMenuMob"><a href="./partidos.html">Partidos</a></span>
+	</div>
+<!--Cuerpo de la página formado por la historia del Rayo Vallecano-->
+	<div class="cuerpoClub">
+		<div class="tituloPagina">Club</div>
+	</div>
+
+		<div class="textoClub">
+			<div class="origen">
+				<h2>Origen</h2>
+					<p>El Rayo Vallecano de Madrid, S. A. D. es un club de fútbol español localizado en el distrito madrileño de Puente de Vallecas. Fue fundado el 29 de mayo de 1924 como Agrupación Deportiva El Rayo, en el domicilio de Prudencia Priego, viuda de Huerta, siendo su primer presidente Julián Huerta Priego. El uniforme original del equipo fue camiseta y pantalón blanco, con medias negras y vuelta blanca. Su primer terreno de juego fue el Campo de las Erillas.  
+						<br> 
+						<br>
+						El 11 de enero de 1940 el club se inscribió en la Federación Castellana de Fútbol. Más tarde, en una junta realizada el 13 de noviembre de 1947 se acordó renombrar al club como Agrupación Deportiva Rayo Vallecano. Además, se acordó utilizar el escudo del Ayuntamiento de Vallecas. En la temporada 1948-49 se logra el ascenso a Tercera División siendo presidente Miguel Rodríguez Alzola y entrenador Tomás Rodríguez Rubio.
+						<br><br>
+						En la temporada 1949-50 se firma un "Acuerdo de Ayuda Mutua" con el Club Atlético de Madrid. Conforme al mismo, a cambio de cederle el Atlético algunos jugadores, pidió al Rayo que dejara de vestirse todo de blanco como el Real Madrid C. F. y añadiera algo rojo a su camiseta, lo que hace que se cambie el uniforme y se añada a la camiseta la franja diagonal.  El acuerdo sólo duró un año, pero la equipación ya nunca se cambiaría. Durante la pretemporada el River fue a jugar un partido con el Real Madrid al Santiago Bernabéu y los argentinos regalaron al Rayo dos juegos de camisetas con "La Banda roja" y pantalones, que hasta el día de hoy perduran en nuestra camiseta.
+					</p>
+			</div>
+			<div class="origen">
+				<h2>Ligas Profesionales</h2>
+					<p>En la temporada 1953-54 empiezan a disputarse ya en el antiguo Campo de Vallecas los partidos de Tercera División y algunos del Campeonato de Aficionados. En 1956 el Rayo Vallecano consigue su primer ascenso a Segunda División tras ganar en el Estadio Metropolitano al Gimnàstic de Tarragona por 5-3. Manolo Peñalva, histórico jugador y posteriormente técnico de la entidad franjirroja, fue el gran artífice de aquel ascenso al anotar tres de los cinco goles del equipo.13
+						<br><br>
+						El 8 de diciembre de 1957 se inaugura el Estadio de Vallecas con un amistoso entre el Rayo Vallecano y el América de Belo Horizonte (Brasil), que ganó el partido por 0-1. En la temporada 1960-61 el equipo desciende a Tercera. En la temporada 1964-65 se logra nuevamente el ascenso a Segunda División.
+						El domingo 5 de noviembre de 1972 se disputa el primer partido oficial en el Estadio de Vallehermoso,El 6 de junio de 1976, cuando el Rayo disputó el último partido de la temporada 1975-76 contra el Real Valladolid, ya en el Nuevo Estadio de Vallecas, construido sobre las ruinas del antiguo estadio, temporada, en la que el Rayo tuvo por entrenador a Alfredo Di Stéfano, que fue sustituido por José Antonio Olmedo en marzo.				
+					</p>
+			</div>	
+				<div class="origen">
+					<h2>Matagigantes</h2>
+						<p>En la temporada 1976-77, tras conseguir en la última jornada el punto que necesitaba ante el Getafe Deportivo, el Rayo consigue el primer ascenso a Primera División, sin perder ningún partido en el Nuevo Estadio de Vallecas. Al año siguiente, con un magnífico debut en la Primera División (décimo de dieciocho equipos), con Héctor Núñez como entrenador, la prensa otorgó al equipo el apelativo de "matagigantes", debido a que fue capaz de vencer en su estadio a los grandes equipos de la liga, como Real Madrid, FC Barcelona, Athletic Club, Valencia CF, Atlético de Madrid y Sevilla FC, cediendo sólo una derrota ante el Elche CF.
+							<br><br>
+							El 8 de agosto de 1978, después del Mundial, se jugó el único Rayo-River Plate de la historia, a pesar de su hermanamiento. Fue durante el VI Trofeo Villa de Madrid, organizado por el Atlético de Madrid. 
+							En la temporada 1981-82 la A.D. Rayo Vallecano con Manuel Peñalva en el banquillo, logra su mejor registro en la Copa de S. M. El Rey, eliminado en semifinales por el Sporting de Gijón. En la temporada 1984-85, tras haber descendido el año anterior, se logra el tercer ascenso a Segunda División. En la campaña 1988-89, nueve años después de su última presencia en la máxima categoría, se logra el retorno a la Primera División.
+						</p>
+				</div>
+				<div class="origen">
+					<h2>Los Ruiz-Mateos</h2>
+						<p>En 1991, al convertirse en Sociedad Anónima Deportiva, el empresario jerezano José María Ruiz-Mateos compró la mayor parte de las acciones y se convirtió en presidente del club, se alcanza el ascenso a Primera División siendo su entrenador José Antonio Camacho, y se mantiene en la temporada 1992-93. En 1993 fichó a Hugo Sánchez, descendiendo pese a ello a Segunda División. El 13 de enero de 1994 le sucedió en el cargo su esposa, María Teresa Rivero Sánchez-Romate, siendo la primera mujer que preside un club de fútbol de Primera División. Además se rebautizó el nombre del club como Rayo Vallecano de Madrid, y también se cambió el escudo (las letras ADRV son reemplazadas por las de RVM). En la temporada 1996-1997 nuevamente se consuma el descenso a Segunda División, batiendo el Rayo un desafortunado récord: el del equipo que ha descendido a Segunda División con mayor número de puntos; y en la temporada 1998-1999 se celebra el 75 aniversario de la fundación del club de la mejor forma posible: con el regreso a Primera. 
+							<br><br>
+							En la temporada 1999-2000 el equipo obtiene a final de temporada la Invitación FIFA Fair Play para disputar la Copa de la UEFA, por ser uno de los equipos con menos amonestaciones de Europa, siendo histórica la temporada 2000-2001, debutando el rayo en competición europea hasta cuartos de final, donde se cruzaron con el Alavés, a la postre finalista. Aunque el Rayo ganó en Vallecas, no pudo aguantar el resultado de la ida. en la temporada 2002-2003 descienden a Segunda Division y en la temporada 2003-2004 descienden a Segunda B. 
+							Por un Referéndum entre los socios, a principios de 2004, el Nuevo Estadio de Vallecas adquiere una nueva denominación: "Campo de Fútbol de Vallecas Teresa Rivero", nombre que llevará hasta finales de 2011, donde, por un nuevo Referéndum pasa a llamarse "Campo de Fútbol de Vallecas".
+							<br><br>
+							En la temporada 2007-08, tras proclamarse campeón del grupo I de Segunda División B y superar la promoción de ascenso logró regresar a Segunda A.
+						</p>
+				</div>
+				<div class="origen">
+					<h2>Raúl Martín Presa hasta la actualidad</h2>
+						<p> El 5 de mayo de 2011, ante la presión económica y el rechazo continuo de la afición, se hace oficial la venta del club al empresario madrileño Raúl Martín Presa, que se hace con el 98,6% de las acciones. 
+							<br><br>
+							El día 22 de mayo de 2011 logran matemáticamente el ascenso a Primera división. La temporada 2012-13 la termina el Rayo en 8.ª posición con 53 puntos, siendo la mejor temporada (tanto en puntos como en clasificación) de la Historia del equipo. Esa temporada el Rayo Vallecano consigue clasificarse para la UEFA Europa League tras la sanción impuesta al Málaga CF, pero al encontrarse en concurso de acreedores no se le concede la licencia y su plaza la ocupa el Sevilla F. C. 
+							<br><br>
+							La temporada 2015-16 empezó con bastantes apuros, a finales de esta temporada el Rayo consumó el descenso a Segunda División. La temporada 2017-18 sería histórica para el Rayo, al proclamarse campeón de Segunda División por vez primera. En su regreso a la máxima categoría, encadenó una serie de malos resultados que provocaron el cese de Míchel y el regreso de Jémez en marzo de 2019, bajo cuya dirección se produjo un nuevo descenso a Segunda División al finalizar los madrileños en el último puesto de la clasificación.  El 20 de junio de 2021, el Rayo Vallecano regresa a Primera División bajo la batuta de Iraola. En la temporada 2021-22 lograría la permanencia sin apuros, marcada por la obtención del récord como equipo invicto jugando de local y la consecución de un puesto en semifinales de Copa del Rey 40 años después
+						</p>
+				<div class= "origen">
+						<img src="./img/historia-rayo.jpg">
+				</div>
+			</div>
+
+<!--Pie de la página formada por la descripción del creador, correo funcional y teléfono funcional-->
+<div class="pie">
+	<div>
+		<span class="material-icons">person_outline</span> &nbsp;&nbsp;Página creada por Daniel Rangel Dorado
+	</div>
+	<div>
+		<table>
+			<tr>
+				<td align="right" style="padding-right:20px"><span class="material-icons">mail</span></td>
+				<td align="left"><a href="mailto:danielrangeldorado@correo.com">danielrangeldorado@correo.com</a></td>
+			</tr>
+			<tr>
+				<td align="right"  style="padding-right:20px"><span class="material-icons">local_phone</span></td>
+				<td align="left"><a href="tel:+34 699 308 390">+34 699 308 390</a></td>
+			</tr>
+
+		</table><br>		 
+	</div>
+</div>
+</body>
+
+<!--Llamada al script para el dinanismo web-->
+<script src="./js/index.js"></script>
+</html>
